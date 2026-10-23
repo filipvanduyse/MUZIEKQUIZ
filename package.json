@@ -1,1 +1,0 @@
-{"name":"opperchampi-muziekquiz","type":"module","private":true,"scripts":{"build":"node --check questions.js && node --check app.js && node --check netlify/functions/room.mjs"},"dependencies":{"@netlify/blobs":"^8.1.0"}}
