@@ -2,6 +2,10 @@
 
 6 deelnemers · 6 rondes · 12 vragen per ronde (6 Spotify-fragmenten + 6 grafische beeldraadsels) · 72 vragen.
 
+## Opgeloste serverfout (versie 2)
+
+De Netlify Function gebruikt nu Functions API v2 (`export default` met Request/Response). Dit is nodig voor automatische Netlify Blobs-configuratie. Als de vorige versie bij **Maak de quizkamer aan** een serverfout gaf, vervang dan de bestaande bestanden in je GitHub-repository, commit ze en laat Netlify opnieuw deployen. Controleer in Netlify bij **Logs → Functions → room** als er toch nog een fout is.
+
 ## Publiceren op Netlify
 
 Dit is **geen gewone losse HTML-pagina**: de zes smartphones delen hun spelstand via een Netlify Function en Netlify Blobs. Uploaden via alleen Netlify Drop is **niet voldoende**. Gebruik een GitHub-repository of de Netlify CLI.
